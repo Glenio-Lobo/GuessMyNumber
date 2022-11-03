@@ -1,0 +1,21 @@
+{
+  "name": "guessmynumber",
+  "version": "1.0.0",
+  "description": "Um jogo simples em que você deve adivinhar um valor de 1 a 20.",
+  "default": "GuessMyNumber.html",
+  "scripts": {
+    "start": "parcel GuessMyNumber.html",
+    "build": "parcel build GuessMyNumber.html --no-scope-hoist --dist-dir ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "globo",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "dependencies": {
+    "core-js": "^3.26.0",
+    "regenerator-runtime": "^0.13.10"
+  }
+}
+

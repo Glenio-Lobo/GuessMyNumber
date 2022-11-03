@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+*::after, *::before{
+    box-sizing: inherit;
+}
+
+/* Variáveis */
+
+:root {
+    --bg-normal: #222;
+    --bg-victory: #60b347;
+    --bg-lost: #f5231c;
+}
+
+body {
+    background-color: var(--bg-normal);
+    color: white;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+
+/* Estilização dos botões */
+.btn {
+    border: 2px solid white;
+    background-color: white;
+    color: var(--bg-normal);
+    font-size: 1rem;
+    padding: 20px 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.7;
+    border: 2px solid gray;
+}
+
+/* Estilização da game Screen */
+.gameScreen {
+    position: relative;
+    text-align: center;
+}
+
+.gameScreen__title{
+    font-size: 2rem;
+}
+
+.gameScreen__current{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 130px;
+    transform: translate(-50%);
+    font-size: 3rem;
+    background-color: white;
+    color: var(--bg-normal);
+}
+
+.gameScreen__line{
+    border: 5px solid white;
+    margin: 90px 0px;
+}
+
+/* Estilização do input e das informações do jogo*/
+
+.gameSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.gameInput input{
+    display: block;
+}
+
+.guessNumber {
+    height: 100px;
+    width: 200px;
+    background-color: var(--bg-normal);
+    border: 5px solid white;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn--check{
+    margin: 0 auto;
+}
+
+.gameInfo p{
+    margin-bottom: 40px;
+}
+
+.label--numberInfo{
+    height: 5rem;
+    width: 17rem;
+    text-align: center;
+    line-height: 1.5;
+}

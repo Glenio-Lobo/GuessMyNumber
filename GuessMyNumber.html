@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess My Number</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <!--End of Google Fonts-->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <!-- End Font Awesome -->
+</head>
+<body>
+    <header class="header" id="header">
+        <input type="button" class='btn btn--again' value="DE NOVO!">
+        <p class="game-indication">(Entre 1 e 20)</p>
+    </header>
+    
+    <main class="main" id="main">
+        <section class="gameScreen">
+            <h1 class="gameScreen__title">Adivinha meu número!</h1>
+            <div class="gameScreen__line"></div>
+            <div class="gameScreen__current">
+                <p class="gameScreen__number">?</p>
+            </div>
+        </section>
+
+        <div class="gameSection">
+            <section class="gameInput">
+                <input type="number" name="guess" id="guess" class="guessNumber">
+                <input type="button" value="Check!" class="btn btn--check">
+            </section>
+
+            <section class='gameInfo'>
+                <p class="label label--numberInfo">
+                    Tente adivinhar...
+                </p>
+                <p class="label label--score">
+                    <i class="fa fa-gamepad"></i> Pontos: <span class="score">20</span>
+                </p>
+                <p class="label label--highscore">
+                    <i class="fa fa-trophy"></i> Maior Ponto: <span class="highscore">0</span>
+                </p>
+            </section>
+        </div>
+        
+    </main>
+
+    <script type='module' src="./src/js/index.js"></script>
+</body>
+</html>
