@@ -2,10 +2,10 @@
   "name": "guessmynumber",
   "version": "1.0.0",
   "description": "Um jogo simples em que você deve adivinhar um valor de 1 a 20.",
-  "default": "GuessMyNumber.html",
+  "default": "index.html",
   "scripts": {
-    "start": "parcel GuessMyNumber.html",
-    "build": "parcel build GuessMyNumber.html --no-scope-hoist --dist-dir ./dist",
+    "start": "parcel index.html",
+    "build": "parcel build index.html --no-scope-hoist --dist-dir ./dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "globo",
